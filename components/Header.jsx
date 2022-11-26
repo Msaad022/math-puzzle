@@ -8,7 +8,7 @@ import User from "../public/user.svg";
 function Header() {
   return (
     <header dir="rtl" className="z-50">
-      <nav className=" bg-nav flex h-20 gap-2 items-center sm:gap-6 sm:h-24 justify-center">
+      <nav className=" bg-nav flex h-20 gap-2 items-center sm:gap-6 sm:h-24 justify-around sm:justify-center">
         {/* Logo */}
         <div className="relative w-14 h-12 sm:w-24 sm:h-20 cursor-pointer">
           <Image
@@ -21,11 +21,11 @@ function Header() {
         {/* Timer */}
         <div className="relative flex items-center justify-between cursor-pointer">
             <span 
-              className="font-bold text-xs sm:text-base absolute left-[37%] text-[#3ECEEA]"
+              className="font-bold text-xs sm:text-base absolute left-1/2 text-[#3ECEEA]"
             >5:59</span>
-            <div className="relative w-11 h-9 sm:w-20 sm:h-14">
+            <div className="relative w-11 h-11 sm:w-20 sm:h-16">
               <Image
-              className="object-[-14px] sm:object-[-23px]"
+              className="object-[-10px] sm:object-[-20px]"
                 src={Time}
                 alt="time"
                 fill
@@ -33,7 +33,7 @@ function Header() {
             </div>
         </div>
         {/* Awards */}
-        <div className="relative w-14 h-10 sm:w-24 sm:h-16 cursor-pointer">
+        <div className="relative w-14 h-14 sm:w-24 sm:h-20 cursor-pointer">
           <Image
             src={Awards}
             alt="awards"
@@ -41,7 +41,7 @@ function Header() {
           />
         </div>
         {/* Money Pag */}
-        <div className="relative w-11 h-9 sm:w-20 sm:h-14 cursor-pointer">
+        <div className="relative w-11 h-11 sm:w-20 sm:h-16 cursor-pointer">
           <Image
             src={Money_bag}
             alt="money_bag"
@@ -53,7 +53,7 @@ function Header() {
         </div>
         {/* User */}
         <div className="cursor-pointer">
-          <div className="relative w-7 h-7 sm:w-10 sm:h-10 mx-auto">
+          <div className="relative w-8 h-8 sm:w-12 sm:h-12 mx-auto">
             <Image
               src={User}
               alt="user"
