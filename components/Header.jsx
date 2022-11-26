@@ -10,7 +10,7 @@ function Header() {
     <header dir="rtl" className="z-50">
       <nav className=" bg-nav flex h-20 gap-2 items-center sm:gap-6 sm:h-24 justify-around sm:justify-center">
         {/* Logo */}
-        <div className="relative w-14 h-12 sm:w-24 sm:h-20 cursor-pointer">
+        <div className="relative w-14 h-12 sm:w-24 sm:h-20 cursor-pointer outline-none">
           <Image
           className="object-[0_-7px]"
             src={Logo}
@@ -19,7 +19,7 @@ function Header() {
           />
         </div>
         {/* Timer */}
-        <div className="relative flex items-center justify-between cursor-pointer">
+        <div className="relative flex items-center justify-between cursor-pointer outline-none">
             <span 
               className="font-bold text-xs sm:text-base absolute left-1/2 text-[#3ECEEA]"
             >5:59</span>
@@ -33,7 +33,7 @@ function Header() {
             </div>
         </div>
         {/* Awards */}
-        <div className="relative w-14 h-14 sm:w-24 sm:h-20 cursor-pointer">
+        <div className="relative w-14 h-14 sm:w-24 sm:h-20 cursor-pointer outline-none">
           <Image
             src={Awards}
             alt="awards"
@@ -41,7 +41,7 @@ function Header() {
           />
         </div>
         {/* Money Pag */}
-        <div className="relative w-11 h-11 sm:w-20 sm:h-16 cursor-pointer">
+        <div className="relative w-11 h-11 sm:w-20 sm:h-16 cursor-pointer outline-none">
           <Image
             src={Money_bag}
             alt="money_bag"
@@ -52,7 +52,7 @@ function Header() {
             sm:w-6 sm:h-6 rounded-full block text-center absolute left-[60%] top-1">25</span>
         </div>
         {/* User */}
-        <div className="cursor-pointer">
+        <div className="cursor-pointer outline-none select-none">
           <div className="relative w-8 h-8 sm:w-12 sm:h-12 mx-auto">
             <Image
               src={User}
