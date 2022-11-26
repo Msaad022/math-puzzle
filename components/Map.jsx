@@ -1,19 +1,12 @@
 import Image from "next/image"
-import map from '../public/map-game.svg'
+import map from '../public/map-game1.svg'
 
 function Map  () {
+  let bgImage= { backgroundImage: `url(/map-game1.svg)` }
   return (
-    <main>
+    <main className=" mx-auto max-w-[636px] ">
         <section>
-            <div className="relative bg-no-repeat h-screen">
-              <Image className="object-contain object-top"
-                src={map} 
-                alt="map game"  
-                fill
-                sizes="(max-width: 768px) 100vw,
-                    (max-width: 1200px) 50vw,
-                    33vw"/>
-            </div>
+          <div className="relative h-screen min-h-[667px] bg-center bg-cover" style={bgImage}></div>
         </section>
     </main>
   )
